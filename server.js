@@ -24,6 +24,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to application." });
 });
 db.mongoose.set("strictQuery", false);
+console.log("DB URL", db.url);
 db.mongoose
   .connect(db.url, {
     useNewUrlParser: true,
