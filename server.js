@@ -7,7 +7,7 @@ const users = require("./app/controllers/userDetails.controllers");
 const userDetailsModel = require("./app/models/userDetails.model");
 
 var corsOptions = {
-  origin: "http://localhost:4200",
+  origin: "https://codeforcesratingchangealertapp.web.app/",
 };
 // app.use(function(req, res, next) {
 //     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
