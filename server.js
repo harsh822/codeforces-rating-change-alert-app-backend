@@ -11,10 +11,13 @@ var corsOptions = {
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
-// app.use(function(req, res, next) {
-//     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
-//     next();
-//   });
+app.use(function (req, res, next) {
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://codeforcesratingchangealertapp.web.app"
+  );
+  next();
+});
 app.use(cors(corsOptions));
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
