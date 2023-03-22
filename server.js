@@ -14,11 +14,11 @@ var corsOptions = {
 app.use(function (req, res, next) {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://codeforcesratingchangealertapp.web.app"
+    "https://codeforcesratingchangealertapp.web.app/"
   );
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Headers", "content-type");
-  res.setHeader("Access-Control-Allow-Credentials", "true");
+  // res.setHeader("Access-Control-Allow-Origin", "*");
+  // res.setHeader("Access-Control-Allow-Headers", "content-type");
+  // res.setHeader("Access-Control-Allow-Credentials", "true");
   next();
   // res.setHeader("Access-Control-Max-Age", "1800");
   // res.setHeader(
