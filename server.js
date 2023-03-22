@@ -7,14 +7,14 @@ const users = require("./app/controllers/userDetails.controllers");
 const userDetailsModel = require("./app/models/userDetails.model");
 
 var corsOptions = {
-  origin: "https://codeforcesratingchangealertapp.web.app/",
+  origin: "https://codeforcesratingchangealertapp.web.app",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
 app.use(function (req, res, next) {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://codeforcesratingchangealertapp.web.app/"
+    "https://codeforcesratingchangealertapp.web.app"
   );
   // res.setHeader("Access-Control-Allow-Origin", "*");
   // res.setHeader("Access-Control-Allow-Headers", "content-type");
